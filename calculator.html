@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\varun\Downloads\body-mass-index.png" type="image/x-icon">
+    <title>CALCULATOR</title>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.box{
+    min-width: 400px;
+    background: url(https://th.bing.com/th/id/R.5946f5971cc64126e4c829935126ad04?rik=DjklibZS86SYiA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f03%2f27%2f198689-texture-abstract-blue.jpg&ehk=3XqKUTshrrEPc%2fyAQCwdQXSZuhdALTjKvnxMtj9oXVQ%3d&risl=&pid=ImgRaw&r=0);
+    border: 2px black solid;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    line-height: 2.2;
+}
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+ 
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    border-radius: 10px;
+    padding: 6px 0;
+    text-align: center;
+}
+button{
+    background-color: #4f7df9;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;    
+    width: 50%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition:  .2s ease;
+}
+button:hover{
+    background-color: rgb(10, 123, 216);
+}
+.result{
+    padding: 30px 20px;
+}
+.bmi{
+    font-size: 33px;
+    font-weight: 600;
+    color: black;
+}
+.comment span{
+    color: #f94f4f;
+    font-weight: 600;
+}
+h4{
+    font-size: 10px;
+    font-weight: 300;
+}
+body{
+    background: url(https://www.miwaylife.co.za/media/2205/thumb_bmi-cal.jpg);
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>BMI (Body Mass Index) Calculator</h3>
+            <div class="content">
+                <div class="input">
+                    <label>Height(cm)</label>
+                    <input type="number" id="height">
+                </div>
+                <div class="input">
+                    <label>Weight(kg)</label>
+                    <input type="number" id="weight">
+                </div>
+                <button id="calculate">Calculate BMI</button>
+            </div>
+            <div class="result">
+                <h5>Your BMI is</h5>
+                <div class="bmi" id="result">00.00</div>
+                <p class="comment"></p>
+            </div>
+            <hr>
+            <h4>
+                Underweight – BMI less than 18.5<br>
+                Normal weight – BMI between 18.5 and 24<br>
+                Overweight – BMI between 25 and 29.9<br>
+                Obese – BMI above 30
+            </h4>
+        </div>
+       
+    </div>
+ 
+     
+     
+    <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;padding: 2px;}
+
+header{
+    display: flex;
+   
+
+} 
+
+
+ul{
+    list-style: none;
+    background: rgba(25, 25, 141, 0.695);
+    display: flex;
+    width: 100%;
+}
+ul li{
+    display: inline;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #22483c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #112c66;
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.img{
+    position: relative;
+    left: 30%;
+    top: 27%;
+    
+}
+#precaution{
+    position: relative;
+    left: 50%;
+    height: 43px;
+    font-variant: small-caps;
+}
+h1{
+    color: rgb(31, 57, 125);
+}
+.text{
+    position: relative;
+    display: inline-block;
+    margin: 1;
+    padding: 5px;
+
+}
+.box{
+    background: whitesmoke;
+    border: 2px whitesmoke solid;
+    border-radius: 3%;
+    background-size: cover;
+    display:inline-block;
+    position: relative;
+    right: -3%;
+    padding: 31px;
+    font-size: 18px;
+}
+footer{
+    background: rgba(0, 0, 0, 0.927);
+    z-index: 1;
+
+    
+}
+footer p{
+    color: aliceblue;
+    font-variant: small-caps;
+    text-align: center;
+}
+#down{
+    width: 96px;
+    font-variant: small-caps;
+    align-self: center;
+}
+ul:last-child{
+    /* align-content: right; */
+    justify-content: flex-end;
+}
+.hidden{
+    flex: 2 1 0;
+}
+#sbar{
+    align-self: center;
+    /* width: 12px; */
+    display: inline;
+}
+#sign{
+    background: rgba(19, 10, 143, 0.804);
+    /* color: rgba(0, 0, 255, 0.862); */
+    border: 2px whitesmoke solid ;
+    border-radius: 54px;
+    height: 64px;
+    align-self: center;
+    font-variant: small-caps;
+    
+}
+/* }
+.unsplash{
+    height: 600px;
+    background: url("https://source.unsplash.com/random/1800×120/?FITNESS") no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+} */

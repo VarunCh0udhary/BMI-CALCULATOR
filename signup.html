@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN 📬</title>
+    <style>
+        body {
+            background: url(https://source.unsplash.com/random/500×200/?FITNESS) no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: rgb(85, 93, 93);
+            border-radius: 26px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 16px 20px;
+            font-size: large;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar li a:hover {
+            color: aquamarine;
+        }
+
+        .search {
+            float: right;
+            margin: 20px;
+        }
+
+        .navbar input {
+            border: 2px;
+            padding: 4px;
+            border-radius: 6px;
+        }
+
+        header {
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px black  solid;
+            border-radius: 10px;
+        }
+
+        .input-field:hover {
+            color: rgb(10, 10, 188);
+        }
+
+        #heading {
+            color: rgb(44, 3, 3);
+            justify-self: center;
+            margin: auto;
+        }
+
+        #login {
+            font-size: x-large;
+            background: rgba(0, 0, 0, 0.43);
+            font-variant: small-caps;
+            color: antiquewhite;
+        }
+
+        #reset {
+            font-size: x-large;
+            background: rgba(0, 0, 0, 0.43);
+            font-variant: small-caps;
+            color: antiquewhite;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="about.html">HOME</a></li>
+            <li><a href="">HELP</a></li>
+            <li><a href="about.html">CONTACT US</a></li>
+            <li><a href="class project.html">LOGIN</a></li>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <fieldset>
+            <legend>SIGN UP</legend>
+            
+        <span> 
+            <br>
+        <form id="form" onsubmit="return validateForm()" action="class project.html">
+           
+                
+                <input type="text" placeholder="NAME" id="name" class="input-field">
+                <br>
+                <input type="date" id="date" placeholder="DOC" class="input-field">
+                <br>
+                <input type="email" id="mail" placeholder="email" class="input-field">
+                <br>
+                <input type="password" id="pass" placeholder="password" class="input-field">
+                <br>
+                <input type="submit" placeholder="LOGIN" id="login" class="input-field" value="Sign up">
+                <input type="reset" id="reset" placeholder="reset" class="input-field">
+          
+        </form>
+    </span>
+        
+    </div>
+
+    <script>
+        function confirmLogin() {
+            
+            const confirmLogin = confirm("Are you sure you want to login?");
+
+          
+            if (confirmLogin) {
+                window.location.href = "class project.html";
+            }
+        }
+
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let date = document.getElementById("date").value;
+            let email = document.getElementById("mail").value;
+            let password = document.getElementById("pass").value;
+
+            
+            if (name === "" || date === "" || email === "" || password === "") {
+                alert("Please fill in all the fields");
+                return false; // Prevent form submission
+            }
+
+          
+            return true;
+        }
+    </script>
+</body>
+
+</html>
